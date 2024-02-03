@@ -1,0 +1,22 @@
+.container {
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  padding: 10px 20px;
+  background-color: coral;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  width: max-content;
+  text-transform: capitalize;
+}
+
+.content {
+  display: flex;
+  gap: 50px;
+}

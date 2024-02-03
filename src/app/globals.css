@@ -1,0 +1,116 @@
+:root {
+  --bg:white,
+  --textColor: black;
+  --softBg: #f0f0f0;
+  --softTextColor: #626262;
+  --bcsdColor: #0058C0;
+  --bcsdSoftColor: #2C95E2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.dark {
+  --bg: #0f172a;
+  --textColor: #ddd;
+  --softBg: #1f0404;
+  --softTextColor: #d8d8d8;
+}
+
+.light {
+  --bg: white;
+  --textColor: black;
+  --softBg: #f0f0f0;
+  --softTextColor: #626262;
+}
+
+.container {
+  min-height: 100vh;
+  color: var(--textColor);
+  background: var(--bg);
+}
+
+.wrapper {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: cyan; */
+}
+
+@media screen and (max-width:1535px) {
+ 
+  .wrapper {
+    max-width: 1366px;
+  }
+}
+
+@media screen and (max-width:1255px) {
+ 
+  .wrapper {
+    max-width: 956px;
+  }
+}
+
+@media screen and (max-width:955px) {
+ 
+  .wrapper {
+    max-width: 786px;
+  }
+}
+
+@media screen and (max-width:785px) {
+ 
+  .wrapper {
+    max-width: 656px;
+  }
+}
+
+@media screen and (max-width:655px) {
+ 
+  .wrapper {
+    max-width: 568px;
+  }
+}
+
+@media screen and (max-width:567px) {
+ 
+  .wrapper {
+    max-width: 430px;
+  }
+}
+
+
+@media screen and (max-width:430px) {
+ 
+  .wrapper {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width:380px) {
+ 
+  .wrapper {
+    max-width: 320px;
+  }
+}
+
+.ql-container {
+  font-size: 28px !important;
+}
+
+.quill > .ql-container > .ql-editor.ql-blank::before {
+  color: var(--softTextColor);
+}
