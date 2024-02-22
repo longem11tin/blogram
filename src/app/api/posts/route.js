@@ -19,6 +19,8 @@ export const GET = async (req) => {
       ...(cat && { catSlug: cat }),
     },
   };
+
+  // console.log("prisma", await prisma);
   
   try {
     const [posts, count] = await prisma.$transaction([
