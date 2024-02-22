@@ -25,7 +25,7 @@ const Comments = ({ postSlug }) => {
   console.log(status);
 
   const { data , mutate, isLoading } = useSWR(
-    `https://blogram-eqr6eb9oo-longem11tin.vercel.app/api/comments?postSlug=${postSlug}`,
+    `https://blogram-ten.vercel.app/api/comments?postSlug=${postSlug}`,
     fetcher
   );
 
