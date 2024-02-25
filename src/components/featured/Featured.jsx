@@ -7,15 +7,15 @@ const Featured = () => {
     <>
       <div className={styles.container}>
         <div className={styles.title}>
-          <p> <b>Hey, this is Long!</b> Discover my stories and my creative ideas </p>
+          <p> <b>Hello world</b> Discover stories and creative ideas </p>
         </div>
         <div className={styles.post}>
           <div className={styles.imgContainer}>
             <Image className={styles.img} src="/coding.png" alt="culture" fill/>
           </div>
           <div className={styles.textContainer}>
-            <h1 className={styles.postTitle}>My first post in this blogram</h1>
-            <p className={styles.postDesc}>This is my first short description</p>
+            <h1 className={styles.postTitle}>A post in blogram</h1>
+            <p className={styles.postDesc}>2</p>
             <button className={styles.button}>Read more</button>
           </div>
         </div>

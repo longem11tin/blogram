@@ -22,12 +22,13 @@ const fetcher = async (url) => {
 
 const Comments = ({ postSlug }) => {
   const { status } = useSession();
-  console.log(status);
+  // console.log(status);
 
   const { data , mutate, isLoading } = useSWR(
-    `https://blogram-ten.vercel.app/api/comments?postSlug=${postSlug}`,
+    `https://blogram-ten.vercel.app/api/comments?postSlug=1`,
     fetcher
   );
+  console.log(data);
 
   const [desc, setDesc] = useState("");
 
