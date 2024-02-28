@@ -7,9 +7,9 @@ export const GET = async (req) => {
   const { searchParams } = new URL(req.url);
 
   const postSlug = searchParams.get("postSlug");
+  console.log(postSlug);
 
   try {
-
     const comments = await prisma.comment.findMany({
       where: { 
         ...(postSlug && { postSlug }),
